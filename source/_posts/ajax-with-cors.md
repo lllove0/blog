@@ -4,8 +4,6 @@ date: 2017-05-02 15:44:25
 tags: ajax cors
 ---
 
-
-
 > 最近正在用 vue.js + vuex + axios 开发一个后台管理的项目。由于服务端的接口地址与 web 的访问不在同一个域里面，所以必须要处理跨域的问题，通过调研跨域的方法，最终决定使用目前比较流行的 CORS 来处理跨域 ，以下介绍在使用 cors 的时候遇到的那些坑，以及处理方法。
 
 现在所有的浏览器基本上都支持 CORS（IE需要10以上），所以只需要服务器实现 CORS 的接口，就可以跨域通讯了。服务端基本的配置如下：
@@ -99,7 +97,7 @@ axiosInstance.interceptors.response.use(response => {
 })
 ```
 
-## Ref
+** Ref **
 
 - [跨域资源共享 CORS 详解](http://www.ruanyifeng.com/blog/2016/04/cors.html)
 - [HTTP访问控制（CORS）](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS)
